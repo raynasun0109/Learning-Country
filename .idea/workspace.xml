@@ -2,8 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7641165-35a1-4d6c-8eda-303132dc139d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/global.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/getHttpsConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/babelTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/About/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/About/img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/About/img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Header/collapse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Header/collectionIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Home/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/LearningList/Empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/NotFound/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Banner/Banner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Banner/Banner.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/footer.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/header.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Heading/Heading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Heading/Heading.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Notification/Notification.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Notification/Notification.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ScrollToTop/ScrollToTop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/function/function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AboutUs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AboutUs/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/CountryDetail/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/CountryDetail/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/CountryList/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/CountryList/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LearningList/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LearningList/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/NotFound/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/NotFound/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/CountryService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,16 +69,42 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1vBObcZipnLkAjmXkqYEkcUQNCP" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/components/NotFound" />
+      <recent name="$PROJECT_DIR$/src/assets/Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/assets/Home" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,12 +128,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626032087855</updated>
-      <workItem from="1626032089095" duration="563000" />
+      <workItem from="1626032089095" duration="22230000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/@babel/core/src/transform-file.js" />
+        <option value="$PROJECT_DIR$/node_modules/@babel/core/src/transform-file-browser.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -61,5 +151,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/store.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/reducer.js</url>
+          <line>28</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

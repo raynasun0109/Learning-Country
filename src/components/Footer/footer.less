@@ -1,0 +1,48 @@
+@import "../../global.less";
+@media screen and (max-width: 413px) {
+  .footer {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: @first-primary-color;
+    color: white;
+    height: 150px;
+    .footerCell {
+      margin-bottom: @second-middle-primary-margin;
+    }
+  }
+}
+@media screen and (min-width:414px)and (max-width: 1023px){
+  .footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: @first-primary-color;
+    height: 150px;
+    justify-content: center;
+    color: white;
+    .footerCell{
+     margin-bottom: @second-middle-primary-margin;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .footer{
+    width: 100vw;
+    display: flex;
+    height: 50px;
+    background-color: @first-primary-color;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 99999;
+    .footerCell{
+      margin: 0 3vw;
+    }
+  }
+}
+

@@ -1,0 +1,176 @@
+@import "../../global.less";
+
+@media screen and (min-width: 1024px) {
+  .container {
+    overflow: hidden;
+
+    .backBtnContainer{
+      margin: @first-primary-margin 0 @middle-margin @first-primary-margin;
+     button{
+       padding: @third-primary-margin;
+       margin: @second-primary-margin @second-primary-margin 0 0;
+       height: auto;
+       border-radius: @button-border-radius;
+       border: none;
+       color: white;
+       background-color: @first-primary-color;
+       font-size: @second-primary-font-size;
+     }
+    }
+    .basicContent {
+      display: flex;
+      margin: @middle-margin 0 0 0;
+      min-height: calc(100vh - 70px - 50px - @first-primary-margin);
+      //justify-content: center;
+
+      .left {
+        //width: auto;
+        //height: 100%;
+        border: 20px solid @first-primary-color;
+        margin-right: @first-primary-margin;
+        margin-left: @first-primary-margin;
+        width: 30vw;
+        height: 15vw;
+        img {
+          width: 100%;
+          height: 100%;
+          //width: 30vw;
+          //height: 20vw;
+          //min-height: 100%;
+        }
+      }
+
+      .right {
+        //width: 100%;
+        .titleContainer{
+          width: auto;
+          margin-bottom: @middle-margin;
+          .title{
+            font-weight: @first-primary-font-weight;
+            color: @first-primary-color;
+            font-size: @large-font-size;
+          }
+          .line{
+            width: 70%;
+            height: 3px;
+            background-color: @first-primary-color;
+          }
+        }
+
+        .actionContainer {
+          .actionArea {
+
+            .btnContainer {
+              display: flex;
+              margin-top: @middle-margin;
+
+              .addToLearningListBtn {
+                border: none;
+                color: white;
+                background-color: @first-primary-color;
+              }
+
+              .checkLearningListBtn {
+                border: 2px solid @first-primary-color;
+                color: @first-primary-color;
+                background-color: white;
+              }
+
+              button {
+                padding: @third-primary-margin;
+                margin: @second-primary-margin @second-primary-margin @middle-margin 0;
+                height: auto;
+                border-radius: @button-border-radius;
+                font-size: @second-primary-font-size;
+              }
+            }
+          }
+        }
+
+        .detailCell {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          .detailTitle {
+            font-weight: @first-primary-font-weight;
+            color: @first-primary-color;
+            font-size: @first-primary-font-size;
+          }
+
+          .detailContent {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            font-size: @second-primary-font-size;
+
+            flex-wrap: wrap;
+
+            img {
+              width: 50px;
+              height: 50px;
+            }
+
+            .productDetailCell {
+              display: flex;
+              align-items: center;
+              margin-bottom: @second-primary-margin;
+            }
+          }
+        }
+      }
+    }
+
+
+    .additionalContentContainer{
+      margin: @middle-margin @first-primary-margin @first-primary-margin @first-primary-margin;
+      .titleContainer{
+        width: auto;
+        margin-bottom: @middle-margin;
+        .title{
+          font-weight: @first-primary-font-weight;
+          color: @first-primary-color;
+          font-size: @large-font-size;
+        }
+        .line{
+          width: 70%;
+          height: 3px;
+          background-color: @first-primary-color;
+        }
+      }
+
+      .detailCell {
+        display: flex;
+        //align-items: center;
+        margin-bottom: @second-primary-margin;
+
+        .detailTitle {
+          font-weight: @first-primary-font-weight;
+          color: @first-primary-color;
+          font-size: @first-primary-font-size;
+        }
+
+        .detailContent {
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+          font-size: @second-primary-font-size;
+
+          flex-wrap: wrap;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+
+          .regionalBlocsContainer{
+            width: 100%;
+            display: block;
+            margin-bottom: @third-primary-margin;
+          }
+
+        }
+      }
+    }
+  }
+}

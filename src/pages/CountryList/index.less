@@ -1,0 +1,89 @@
+@import "../../global.less";
+
+@media screen and (min-width: 1024px) {
+  .container{
+    .countryListContainer{
+      margin-bottom: @first-primary-margin;
+      .countryListContent{
+        justify-content:center;
+        display: flex;
+        flex-direction: column;
+        .countryCard{
+          border-radius: @card-border-radius;
+          margin: @second-primary-margin auto;
+          //justify-content: space-between;
+          display: flex;
+          width: 60vw;
+          background-blend-mode: soft-light, normal;
+          box-shadow: -7px -7px 16px #FAFBFC, 4px 3px 10px #BDC1D1, inset -1px -1px 10px #F5F6FA, inset 1px 1px 10px #E9EAF2;
+          .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:0 @middle-margin 0 @first-primary-margin;
+            width: 30%;
+            .imgContainer{
+              margin:@middle-margin auto;
+              border: 7px solid @first-primary-color;
+              border-radius: 50%;
+
+              //width: 100%;
+              //height: auto;
+              width: 150px;
+              height: 150px;
+              padding: 10px;
+              img{
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+
+
+          .right{
+            margin: @middle-margin 0;
+            .detailCell{
+              display: flex;
+              margin-bottom: @second-primary-margin;
+              .detailTitle{
+                color: @first-primary-color;
+                font-weight: @second-primary-font-weight;
+                margin-right: @second-primary-margin;
+              }
+              .detailContent{
+                text-align: left;
+                display: flex;
+              }
+            }
+
+            .detailPageBtn{
+              display: flex;
+              button{
+                padding: @third-primary-margin;
+                margin: @second-primary-margin @second-primary-margin 0 0;
+                height: auto;
+                border-radius: @button-border-radius;
+                font-size: @second-primary-font-size;
+              }
+              //justify-content: center;
+              .addToLearningListBtn{
+                border: none;
+                color: white;
+                background-color: @first-primary-color;
+              }
+              .detailBtn{
+                border: 2px solid @first-primary-color;
+                color: @first-primary-color;
+                background-color: white;
+              }
+            }
+          }
+
+        }
+
+      }
+
+    }
+  }
+}

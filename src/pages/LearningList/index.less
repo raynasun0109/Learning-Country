@@ -1,0 +1,161 @@
+@import "../../global.less";
+
+@media screen and (min-width: 1024px) {
+  .container{
+    .emptyContainer{
+
+    }
+
+    .listContainer{
+      margin-bottom: @first-primary-margin;
+      .emptyContainer {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: @middle-margin;
+
+        img {
+          width: 30vw;
+          height: 30vw;
+        }
+
+        .content {
+          font-weight: @first-primary-font-weight;
+          font-size: @first-primary-font-size;
+          margin: @second-primary-margin 0;
+          text-align: center;
+        }
+
+        .chooseMore {
+          background-color: @first-primary-color;
+          color: white;
+          margin: @second-primary-margin 0 @first-primary-margin 0;
+          padding: @second-primary-margin;
+          border: none;
+          border-radius: @button-border-radius;
+          font-size: @second-primary-font-size;
+        }
+      }
+      .countryListContainer{
+
+        margin-bottom: @second-primary-margin;
+        .btnContainer{
+          display: flex;
+          justify-content: center;
+          margin-top: @first-primary-margin;
+          button{
+            border: none;
+            color: white;
+            background-color: @first-primary-color;
+            padding: @third-primary-margin;
+            margin: @second-primary-margin @second-primary-margin 0 0;
+            height: auto;
+            border-radius: @button-border-radius;
+            font-size: @second-primary-font-size;
+          }
+        }
+        .countryListContent{
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          width: 80vw;
+
+          .countryCard{
+            border-radius: @card-border-radius;
+            //margin: 0 @second-primary-margin;
+            //justify-content: space-between;
+            width: 20vw;
+            position: relative;
+            background-blend-mode: soft-light, normal;
+            box-shadow: -7px -7px 16px #FAFBFC, 4px 3px 10px #BDC1D1, inset -1px -1px 10px #F5F6FA, inset 1px 1px 10px #E9EAF2;
+            .removeBtn{
+              position: absolute;
+              background-color: @first-primary-color;
+              color: white;
+              top: 1vw;
+              right: 1vw;
+              z-index: 99;
+              width: 2vw;
+              height: 2vw;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .remove{
+
+              }
+            }
+            .imgContainer{
+              margin:@middle-margin auto;
+              border: 7px solid @first-primary-color;
+              border-radius: 50%;
+
+              //width: 100%;
+              //height: auto;
+              width: 10vw;
+              height: 10vw;
+              padding: 10px;
+              img{
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+
+            .contentContainer{
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              margin: @middle-margin auto;
+              .detailContent{
+                margin-bottom: @second-middle-primary-margin;
+              }
+              .detailTitle{
+                font-size: @second-primary-font-size;
+                color: @first-primary-color;
+                margin-bottom: @second-middle-primary-margin;
+                font-weight: @second-primary-font-weight;
+              }
+
+              .detailPageBtn{
+                display: flex;
+                margin: @second-primary-margin 0 0 0;
+                button{
+                  padding: @third-primary-margin;
+                  height: auto;
+                  border-radius: @button-border-radius;
+                }
+                .detailBtn{
+                  border: 2px solid @first-primary-color;
+                  color: @first-primary-color;
+                  background-color: white;
+                }
+              }
+            }
+
+          }
+
+        }
+
+      }
+    }
+    .titleContainer{
+      width: auto;
+      margin: @first-primary-margin 0 @middle-margin 0;
+      .title{
+        text-align: center;
+        font-weight: @first-primary-font-weight;
+        color: @first-primary-color;
+        font-size: @large-font-size;
+      }
+      .line{
+        margin: @third-primary-margin auto;
+        width: 15vw;
+        height: 3px;
+        background-color: @first-primary-color;
+      }
+    }
+  }
+}
