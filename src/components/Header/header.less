@@ -1,5 +1,5 @@
 @import "../../global.less";
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 414px) {
 
   .header {
     display: flex;
@@ -7,9 +7,7 @@
     width: 100vw;
     position: fixed;
     top: 0;
-    //overflow: auto;
     justify-content: space-between;
-    //top: @middle-margin;
     z-index: 99999;
     background-color: @first-primary-color;
 
@@ -40,14 +38,7 @@
     }
 
     .sideBarArea {
-      //bottom: 0;
-      //background-color: white;
-      //height: 25px;
-      //width: 25px;
       transform: translateX(0px);
-      //z-index: 99;
-
-
     }
 
     .closeSideBarArea {
@@ -56,26 +47,15 @@
     }
 
     .sideBarContainer {
-      //background-color: white;
-      //height: 25px;
-      //width: 25px;
       position: absolute;
-      //left: 0;
-      //border: 1px solid royalblue;
-      //bottom: 0;
-      //margin-left: auto;
       padding-top: @second-primary-margin;
       width: 50vw;
-      ////position: absolute;
       top: 70px;
       right: 0;
       transition: all 700ms;
       height: 100vh;
       background-color: @first-primary-color;
-
-      //-webkit-transform: translateY(0px) translateX(0px);
       transform: translateY(0px) translateX(0px);
-      //border: 1px solid yellow;
       .menuArea {
         .menuCell {
           margin: @second-primary-margin @middle-margin;
@@ -93,7 +73,6 @@
 
       .collectionContainer{
         display: flex;
-        //justify-content: center;
         align-items: center;
         cursor: pointer;
         margin: @second-primary-margin @middle-margin;
@@ -128,13 +107,11 @@
         }
 
       }
-
-
     }
 
   }
 }
-@media screen and (min-width:414px) and (max-width: 1023px) {
+@media screen and (min-width:415px) and (max-width: 1023px) {
 
   .header{
     display: flex;
@@ -142,9 +119,7 @@
     width: 100vw;
     position: fixed;
     top: 0;
-    //overflow: auto;
     justify-content: space-between;
-    //top: @middle-margin;
     z-index: 99999;
     background-color: @first-primary-color;
     .logoArea{
@@ -172,40 +147,22 @@
       }
     }
       .sideBarArea{
-        //bottom: 0;
-        //background-color: white;
-        //height: 25px;
-        //width: 25px;
         transform: translateX(0px);
-        //z-index: 99;
-
-
       }
       .closeSideBarArea{
         z-index: 99;
         width: 0!important;
       }
       .sideBarContainer {
-        //background-color: white;
-        //height: 25px;
-        //width: 25px;
         position: absolute;
-        //left: 0;
-        //border: 1px solid royalblue;
-        //bottom: 0;
-        //margin-left: auto;
         padding-top: @second-primary-margin;
         width: 200px;
-        ////position: absolute;
         top: 70px;
         right: 0;
         transition: all 700ms;
         height: 100vh;
         background-color: @first-primary-color;
-
-        //-webkit-transform: translateY(0px) translateX(0px);
         transform: translateY(0px) translateX(0px);
-        //border: 1px solid yellow;
         .menuArea {
           .menuCell {
             margin: @second-primary-margin @middle-margin;
@@ -222,7 +179,6 @@
 
         .collectionContainer{
           display: flex;
-          //justify-content: center;
           align-items: center;
           cursor: pointer;
           margin: @second-primary-margin @middle-margin;
@@ -257,8 +213,6 @@
           }
 
         }
-
-
       }
 
   }

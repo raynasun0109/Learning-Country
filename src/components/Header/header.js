@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styles from "./header.less";
 import Logo from "../../assets/logo.png";
-// import {Badge} from "antd";
 import CollapseIcon from "../../assets/Header/collapse.png";
 import {connect} from "react-redux";
 import collectionIcon from "../../assets/Header/collectionIcon.png"
@@ -71,8 +70,6 @@ class Header extends Component {
     render() {
         const {menu,pathname,collapse,isOpenSideMenu}= this.state;
         const {totalNumber}=this.props.state;
-        console.log("totalNumber",totalNumber)
-        console.log(this.props)
         return (
             <div className={styles.header}>
                 {
@@ -158,4 +155,3 @@ const mapStateToProps=(state)=>{
     }
 }
 export default connect(mapStateToProps)(withRouter(Header));
-// export default withRouter(Header);

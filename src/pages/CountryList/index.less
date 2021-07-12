@@ -1,6 +1,6 @@
 @import "../../global.less";
 
-@media screen and (max-width: 413px){
+@media screen and (max-width: 414px){
   .container {
     .filterArea {
       .filterCell {
@@ -63,7 +63,6 @@
         .countryCard {
           border-radius: @card-border-radius;
           margin: @second-primary-margin auto;
-          //justify-content: space-between;
           display: flex;
           flex-direction: column;
           width: 90vw;
@@ -91,13 +90,12 @@
             }
           }
 
-
           .right {
             margin: @second-primary-margin 0;
 
             .detailCell {
               display: flex;
-              margin:0 @second-primary-margin @second-primary-margin @second-primary-margin;
+              margin:0 12vw @second-primary-margin 12vw;
 
               .detailTitle {
                 color: @first-primary-color;
@@ -123,8 +121,6 @@
                 border-radius: @button-border-radius;
                 font-size: @second-middle-primary-font-size;
               }
-
-              //justify-content: center;
               .addToLearningListBtn {
                 border: none;
                 color: white;
@@ -147,7 +143,7 @@
   }
 }
 
-@media screen and (min-width:414px)and (max-width: 1023px) {
+@media screen and (min-width:415px)and (max-width: 1023px) {
   .container {
     .filterArea {
       .filterCell {
@@ -202,6 +198,8 @@
     .countryListContainer {
       margin-bottom: @first-primary-margin;
 
+      width: 100vw;
+      overflow: hidden;
       .countryListContent {
         justify-content: center;
         display: flex;
@@ -210,8 +208,8 @@
         .countryCard {
           border-radius: @card-border-radius;
           margin: @second-primary-margin auto;
-          //justify-content: space-between;
           display: flex;
+          flex-direction: column;
           width: 80vw;
           background-blend-mode: soft-light, normal;
           box-shadow: -7px -7px 16px #FAFBFC, 4px 3px 10px #BDC1D1, inset -1px -1px 10px #F5F6FA, inset 1px 1px 10px #E9EAF2;
@@ -220,8 +218,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 @middle-margin 0 @first-primary-margin;
-            width: 30%;
+            margin: 0 auto;
 
             .imgContainer {
               margin: @middle-margin auto;
@@ -239,9 +236,8 @@
             }
           }
 
-
           .right {
-            margin: @middle-margin 0;
+            margin: @middle-margin 12vw;
 
             .detailCell {
               display: flex;
@@ -261,6 +257,7 @@
 
             .detailPageBtn {
               display: flex;
+              flex-direction: column;
 
               button {
                 padding: @third-primary-margin;
@@ -270,7 +267,6 @@
                 font-size: @second-middle-primary-font-size;
               }
 
-              //justify-content: center;
               .addToLearningListBtn {
                 border: none;
                 color: white;
@@ -341,6 +337,8 @@
     }
     .countryListContainer{
       margin-bottom: @first-primary-margin;
+      width: 100vw;
+      overflow: hidden;
       .countryListContent{
         justify-content:center;
         display: flex;
@@ -348,7 +346,6 @@
         .countryCard{
           border-radius: @card-border-radius;
           margin: @second-primary-margin auto;
-          //justify-content: space-between;
           display: flex;
           width: 60vw;
           background-blend-mode: soft-light, normal;
@@ -363,9 +360,6 @@
               margin:@middle-margin auto;
               border: 7px solid @first-primary-color;
               border-radius: 50%;
-
-              //width: 100%;
-              //height: auto;
               width: 150px;
               height: 150px;
               padding: 10px;
@@ -376,7 +370,6 @@
               }
             }
           }
-
 
           .right{
             margin: @middle-margin 0;
@@ -403,7 +396,6 @@
                 border-radius: @button-border-radius;
                 font-size: @second-primary-font-size;
               }
-              //justify-content: center;
               .addToLearningListBtn{
                 border: none;
                 color: white;
@@ -416,11 +408,8 @@
               }
             }
           }
-
         }
-
       }
-
     }
   }
 }

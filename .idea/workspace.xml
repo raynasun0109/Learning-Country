@@ -3,25 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="e7641165-35a1-4d6c-8eda-303132dc139d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/footer.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/header.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Heading/Heading.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading/Heading.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Notification/Notification.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Notification/Notification.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/function/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/function/function.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/AboutUs/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutUs/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CountryDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CountryDetail/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CountryDetail/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CountryDetail/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/CountryList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CountryList/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/CountryList/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CountryList/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/LearningList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LearningList/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/LearningList/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LearningList/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/NotFound/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFound/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/CountryService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CountryService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

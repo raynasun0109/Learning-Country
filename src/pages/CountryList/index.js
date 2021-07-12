@@ -5,26 +5,11 @@ import {getAllCountry,searchCountryByName,searchCountryByCallingCode,
 import {connect} from "react-redux";
 import {addCountry} from "../../redux/action";
 import Heading from "../../components/Heading/Heading";
-// import {Toast} from "../../components/Notification/Notification";
+import ScrollToTopOnMount from "../../components/ScrollToTop/ScrollToTop";
 class Index extends Component {
     state={
         countryList:[],
-        totalPage:1
-        // productType:["Standard","Other"],
-        // chosenProductType:"",
-        // subCategory:["Highly Recommended","Most Popular"],
-        // chosenSubCategory:"",
-        // sortBy:"",
-        // sortByChoice:[
-        //     {
-        //         name:"Price",
-        //         content:['From Low to High',"From High to Low"]
-        //     },
-        //     {
-        //         name:"ETA",
-        //         content:['From Low to High',"From High to Low"]
-        //     }
-        // ]
+        // totalPage:1
     }
 
     componentDidMount(){
@@ -106,10 +91,10 @@ class Index extends Component {
 
 
     render() {
-        const {countryList,totalPage}= this.state;
-        console.log(countryList,totalPage)
+        const {countryList}= this.state;
         return (
             <div className={styles.container}>
+                <ScrollToTopOnMount/>
                 <Heading title="Country List"/>
                 <div className={styles.filterArea}>
                     <div className={styles.filterCell}>
@@ -230,9 +215,6 @@ class Index extends Component {
                         }
                     </div>
                 </div>
-                <div className={styles.paginationContainer}>
-
-                </div>
             </div>
         );
     }
@@ -241,7 +223,6 @@ class Index extends Component {
 const mapDispatchToProps=(dispatch)=>{
     return {
         addCountry(item){
-            // message.success("Added Successfully")
             dispatch(addCountry(item))
         },
     }

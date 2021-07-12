@@ -20,7 +20,7 @@ class Index extends Component {
     }
 
     toLearningList=()=>{
-
+        this.props.history.push("/learningList");
     }
 
     goBack=()=>{
@@ -29,7 +29,6 @@ class Index extends Component {
 
     render() {
         const {countryDetail}= this.state;
-        {console.log("countryDetail",countryDetail)}
         return (
             <div className={styles.container}>
                 <ScrollToTopOnMount/>
@@ -127,13 +126,10 @@ class Index extends Component {
                                 <div className={styles.btnContainer}>
                                     <button className={styles.addToLearningListBtn} onClick={()=>{this.props.addCountry(countryDetail)}}>Add to Learning List</button>
                                     <button className={styles.checkLearningListBtn} onClick={this.toLearningList}>Check Learning List</button>
-
                                 </div>
                             </div>
                         </div>
-
-            </div>
-
+                    </div>
                 </div>
 
 
@@ -208,11 +204,11 @@ class Index extends Component {
                                 }
                             </div>
                         </div>
-                        <div className={styles.detailCell}>
+                        <div className={`${styles.detailCell} ${styles.regionalBlocs}`}>
                             <div className={styles.detailTitle}>
                                 Regional Blocs:
                             </div>
-                            <div className={styles.detailContent}>
+                            <div className={`${styles.detailContent} `}>
                                 {
                                     countryDetail.regionalBlocs&&
                                     countryDetail.regionalBlocs.map((regionalBloc,index)=>{
@@ -240,11 +236,9 @@ class Index extends Component {
     }
 }
 
-// export default Index;
 const mapDispatchToProps=(dispatch)=>{
     return {
         addCountry(item){
-            // message.success("Added Successfully")
             dispatch(addCountry(item))
         },
     }

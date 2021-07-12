@@ -1,6 +1,6 @@
 @import "../../global.less";
 
-@media screen and (max-width: 413px)  {
+@media screen and (max-width: 414px)  {
   .container {
 
     .listContainer {
@@ -70,6 +70,7 @@
             background-blend-mode: soft-light, normal;
             box-shadow: -7px -7px 16px #FAFBFC, 4px 3px 10px #BDC1D1, inset -1px -1px 10px #F5F6FA, inset 1px 1px 10px #E9EAF2;
 
+            margin-bottom: @middle-margin;
             .removeBtn {
               position: absolute;
               background-color: @first-primary-color;
@@ -164,7 +165,7 @@
     }
   }
 }
-@media screen and (min-width:414px)and (max-width: 1023px) {
+@media screen and (min-width:415px)and (max-width: 1023px) {
   .container {
     .listContainer {
       margin-bottom: @first-primary-margin;
@@ -185,6 +186,8 @@
           font-size: @first-primary-font-size;
           margin: @second-primary-margin 0;
           text-align: center;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
 
         .chooseMore {
@@ -223,15 +226,16 @@
           margin: 0 auto;
           display: flex;
           flex-wrap: wrap;
-          width: 80vw;
+          width: 90vw;
 
           .countryCard {
             border-radius: @card-border-radius;
-            width: 20vw;
+            width: 30vw;
             position: relative;
             background-blend-mode: soft-light, normal;
             box-shadow: -7px -7px 16px #FAFBFC, 4px 3px 10px #BDC1D1, inset -1px -1px 10px #F5F6FA, inset 1px 1px 10px #E9EAF2;
 
+            text-align: center;
             .removeBtn {
               position: absolute;
               background-color: @first-primary-color;
@@ -314,7 +318,9 @@
         text-align: center;
         font-weight: @first-primary-font-weight;
         color: @first-primary-color;
+
         font-size: @large-font-size;
+
       }
 
       .line {
@@ -403,9 +409,6 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              .remove{
-
-              }
             }
             .imgContainer{
               margin:@middle-margin auto;

@@ -1,5 +1,4 @@
 import * as setting from "./../setting";
-import {FilterOneCountryDetail} from "./../function/function"
 import axios from 'axios';
 
 /**

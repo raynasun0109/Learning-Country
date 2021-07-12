@@ -10,10 +10,13 @@ class Index extends Component {
         this.props.history.push("/country")
     }
 
+    jumpToCountryDetail=(pageDetail)=>{
+        this.props.history.push( {pathname:`/country/${pageDetail.name}`})
+    }
+
 
     render() {
-        const {countryList,totalNumber}=this.props.state;
-        // console.log(countryList,totalNumber)
+        const {countryList}=this.props.state;
         return (
             <div className={styles.container}>
                 <Heading title="Learning List"/>
@@ -85,13 +88,9 @@ const mapStateToProps=(state)=>{
 const mapDispatchToProps=(dispatch)=>{
     return {
         addCountry(item){
-            // console.log("item",item)
-            // message.success("Added Successfully")
             dispatch(addCountry(item))
         },
         removeCountry(item){
-            // console.log("item",item)
-            // message.success("Removed Successfully")
             dispatch(removeCountry(item))
         },
     }

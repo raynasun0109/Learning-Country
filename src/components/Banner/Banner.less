@@ -1,5 +1,5 @@
 @import "../../global.less";
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 414px) {
   .bannerContainer {
     position: relative;
     width: 100%;
@@ -11,7 +11,6 @@
 
     .bannerText {
       z-index: 2;
-      //top: calc(6vw);
       margin: 0 auto;
       left: 50%;
       top: 50%;
@@ -23,9 +22,8 @@
       text-align: center;
     }
   }
-
 }
-@media screen and (min-width:414px)and (max-width: 1023px){
+@media screen and (min-width:415px)and (max-width: 1023px){
   .bannerContainer {
     position: relative;
     width: 100%;
@@ -37,14 +35,14 @@
 
     .bannerText {
       z-index: 2;
-      top: calc(120px);
       margin: 0 auto;
       left: 50%;
-      transform: translateX(-50%);
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
       position: absolute;
       font-size: @large-middle-font-size;
       font-weight: @first-primary-font-weight;
-      color: white;
+      color: @second-primary-color;
       text-align: center;
     }
   }
@@ -61,15 +59,15 @@
 
     .bannerText {
       z-index: 2;
-      top: calc(250px);
       margin: 0 auto;
       left: 50%;
       text-align: center;
-      transform: translateX(-50%);
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
       position: absolute;
       font-size: @large-font-size;
       font-weight: @first-primary-font-weight;
-      color: white;
+      color: @second-primary-color;
 
     }
   }

@@ -25,7 +25,6 @@ const reducer=(state=initState,action)=>{
                 countryList:filteredList,
                 totalNumber:filteredList.length,
             })
-            break
 
         case "addCountry":
             const {countryList}=state;
@@ -41,7 +40,6 @@ const reducer=(state=initState,action)=>{
                 countryList:state.countryList,
                 totalNumber:state.countryList.length,
             })
-            break
 
         default:
             return state;

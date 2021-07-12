@@ -7,21 +7,6 @@ import Heading from "../../components/Heading/Heading";
 class Index extends Component {
     state={
         countryList:[],
-        // productType:["Standard","Other"],
-        // chosenProductType:"",
-        // subCategory:["Highly Recommended","Most Popular"],
-        // chosenSubCategory:"",
-        // sortBy:"",
-        // sortByChoice:[
-        //     {
-        //         name:"Price",
-        //         content:['From Low to High',"From High to Low"]
-        //     },
-        //     {
-        //         name:"ETA",
-        //         content:['From Low to High',"From High to Low"]
-        //     }
-        // ]
     }
     componentDidMount(){
         this.fetchCountryList()
@@ -42,7 +27,6 @@ class Index extends Component {
 
     render() {
         const {countryList}= this.state;
-        console.log(countryList)
         return (
             <div className={styles.container}>
                 <Banner text="Best Website for Learning Countries" img={BannerImg}/>

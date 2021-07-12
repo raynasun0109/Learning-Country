@@ -1,9 +1,327 @@
 @import "../../global.less";
 
+@media screen and (max-width: 414px) {
+  .container {
+
+    .backBtnContainer{
+      margin: @second-middle-primary-margin 0 @second-middle-primary-margin @middle-middle-margin;
+      button{
+        padding: @third-primary-margin;
+        margin: @second-primary-margin 0 0 0;
+        height: auto;
+        border-radius: @button-border-radius;
+        border: none;
+        color: white;
+        background-color: @first-primary-color;
+        font-size: @second-middle-primary-font-size;
+      }
+    }
+    .basicContent {
+      margin: @first-middle-primary-margin 0 0 0;
+      min-height: calc(100vh - 70px - 50px - @first-middle-primary-margin);
+
+      .left {
+        border: 16px solid @first-primary-color;
+        margin: @middle-margin auto;
+        width: 70vw;
+        height: 40vw;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .right {
+        .titleContainer{
+          width: auto;
+          margin-bottom: @middle-margin;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .title{
+            font-weight: @first-primary-font-weight;
+            color: @first-primary-color;
+            font-size: @large-middle-font-size;
+          }
+          .line{
+            width: 30%;
+            height: 3px;
+            background-color: @first-primary-color;
+          }
+        }
+
+        .actionContainer {
+          .actionArea {
+            .btnContainer {
+              display: flex;
+              margin-top: @middle-margin;
+
+              align-items: center;
+              flex-direction: column;
+              justify-content: center;
+              .addToLearningListBtn {
+                border: none;
+                color: white;
+                background-color: @first-primary-color;
+              }
+
+              .checkLearningListBtn {
+                border: 2px solid @first-primary-color;
+                color: @first-primary-color;
+                background-color: white;
+              }
+
+              button {
+                padding: @third-primary-margin;
+                margin: @second-middle-primary-margin @second-primary-margin @second-middle-primary-margin 0;
+                height: auto;
+                border-radius: @button-border-radius;
+                font-size: @second-middle-primary-font-size;
+              }
+            }
+          }
+        }
+
+        .detailCell {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          justify-content: center;
+
+          .detailTitle {
+            font-weight: @first-primary-font-weight;
+            color: @first-primary-color;
+            font-size: @second-middle-primary-font-size;
+          }
+
+          .detailContent {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: @second-middle-primary-font-size;
+
+            img {
+              width: 50px;
+              height: 50px;
+            }
+
+          }
+        }
+      }
+    }
+
+
+    .additionalContentContainer{
+      margin: @first-middle-primary-margin auto @first-primary-margin auto;
+      .titleContainer{
+        width: auto;
+        margin-bottom: @middle-margin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title{
+          font-weight: @first-primary-font-weight;
+          color: @first-primary-color;
+          font-size: @large-middle-font-size;
+          text-align: center;
+        }
+        .line{
+          width: 30%;
+          height: 3px;
+          background-color: @first-primary-color;
+        }
+      }
+      .regionalBlocs{
+        width: 30vw;
+        margin: 0 auto;
+        .regionalBlocsContainer{
+          margin-bottom: @third-primary-margin;
+        }
+      }
+      .detailCell {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: center;
+
+        .detailTitle {
+          font-weight: @first-primary-font-weight;
+          color: @first-primary-color;
+          font-size: @second-middle-primary-font-size;
+        }
+
+        .detailContent {
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          font-size: @second-middle-primary-font-size;
+
+
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:415px)and (max-width: 1023px) {
+  .container {
+
+    .backBtnContainer{
+      margin: @first-primary-margin 0 @middle-margin @first-primary-margin;
+      button{
+        padding: @third-primary-margin;
+        margin: @second-primary-margin @second-primary-margin 0 0;
+        height: auto;
+        border-radius: @button-border-radius;
+        border: none;
+        color: white;
+        background-color: @first-primary-color;
+        font-size: @second-middle-primary-font-size;
+      }
+    }
+    .basicContent {
+      margin: @middle-margin 0 0 0;
+      min-height: calc(100vh - 70px - 50px - @first-primary-margin);
+
+      .left {
+        border: 18px solid @first-primary-color;
+        margin: @first-primary-margin auto;
+        width: 50vw;
+        height: 25vw;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .right {
+        .titleContainer{
+          width: auto;
+          margin-bottom: @middle-margin;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .title{
+            font-weight: @first-primary-font-weight;
+            color: @first-primary-color;
+            font-size: @large-font-size;
+          }
+          .line{
+            width: 30%;
+            height: 3px;
+            background-color: @first-primary-color;
+          }
+        }
+
+        .actionContainer {
+          .actionArea {
+            .btnContainer {
+              display: flex;
+              margin-top: @middle-margin;
+
+              justify-content: center;
+              .addToLearningListBtn {
+                border: none;
+                color: white;
+                background-color: @first-primary-color;
+              }
+
+              .checkLearningListBtn {
+                border: 2px solid @first-primary-color;
+                color: @first-primary-color;
+                background-color: white;
+              }
+
+              button {
+                padding: @third-primary-margin;
+                margin: @second-primary-margin @second-primary-margin @middle-margin 0;
+                height: auto;
+                border-radius: @button-border-radius;
+                font-size: @second-middle-primary-font-size;
+              }
+            }
+          }
+        }
+
+        .detailCell {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          justify-content: center;
+
+          .detailTitle {
+            font-weight: @first-primary-font-weight;
+            color: @first-primary-color;
+            font-size: @first-primary-font-size;
+          }
+
+          .detailContent {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            font-size: @second-primary-font-size;
+            flex-wrap: wrap;
+
+          }
+        }
+      }
+    }
+
+
+    .additionalContentContainer{
+      margin: @first-middle-primary-margin auto @first-primary-margin auto;
+      .titleContainer{
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: @middle-margin;
+        .title{
+          font-weight: @first-primary-font-weight;
+          color: @first-primary-color;
+          font-size: @large-font-size;
+          text-align: center;
+        }
+        .line{
+          width: 30%;
+          height: 3px;
+          background-color: @first-primary-color;
+        }
+      }
+      .regionalBlocs{
+        width: 30vw;
+        margin: 0 auto;
+        .regionalBlocsContainer{
+          margin-bottom: @third-primary-margin;
+        }
+      }
+      .detailCell {
+        display: flex;
+        margin-bottom: @second-primary-margin;
+
+        justify-content: center;
+        .detailTitle {
+          font-weight: @first-primary-font-weight;
+          color: @first-primary-color;
+          font-size: @first-primary-font-size;
+        }
+
+        .detailContent {
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+          font-size: @second-primary-font-size;
+          flex-wrap: wrap;
+
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .container {
-    overflow: hidden;
-
     .backBtnContainer{
       margin: @first-primary-margin 0 @middle-margin @first-primary-margin;
      button{
@@ -20,12 +338,8 @@
     .basicContent {
       display: flex;
       margin: @middle-margin 0 0 0;
-      min-height: calc(100vh - 70px - 50px - @first-primary-margin);
-      //justify-content: center;
 
       .left {
-        //width: auto;
-        //height: 100%;
         border: 20px solid @first-primary-color;
         margin-right: @first-primary-margin;
         margin-left: @first-primary-margin;
@@ -34,14 +348,11 @@
         img {
           width: 100%;
           height: 100%;
-          //width: 30vw;
-          //height: 20vw;
-          //min-height: 100%;
         }
       }
 
       .right {
-        //width: 100%;
+        height: 100%;
         .titleContainer{
           width: auto;
           margin-bottom: @middle-margin;
@@ -59,7 +370,6 @@
 
         .actionContainer {
           .actionArea {
-
             .btnContainer {
               display: flex;
               margin-top: @middle-margin;
@@ -103,19 +413,8 @@
             display: flex;
             align-items: center;
             font-size: @second-primary-font-size;
-
             flex-wrap: wrap;
 
-            img {
-              width: 50px;
-              height: 50px;
-            }
-
-            .productDetailCell {
-              display: flex;
-              align-items: center;
-              margin-bottom: @second-primary-margin;
-            }
           }
         }
       }
@@ -141,7 +440,6 @@
 
       .detailCell {
         display: flex;
-        //align-items: center;
         margin-bottom: @second-primary-margin;
 
         .detailTitle {
@@ -155,13 +453,7 @@
           display: flex;
           align-items: center;
           font-size: @second-primary-font-size;
-
           flex-wrap: wrap;
-
-          img {
-            width: 50px;
-            height: 50px;
-          }
 
           .regionalBlocsContainer{
             width: 100%;
