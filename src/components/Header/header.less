@@ -91,16 +91,42 @@
         }
       }
 
-      .shoppingArea {
-        margin: @second-primary-margin @middle-margin;
+      .collectionContainer{
         display: flex;
+        //justify-content: center;
         align-items: center;
         cursor: pointer;
+        margin: @second-primary-margin @middle-margin;
+        position: relative;
+        width: auto;
+        height: auto;
+        .collectionArea{
+          .numberContainer{
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            color: @first-primary-color;
+            width: 5vw;
+            top: 0;
+            margin-top: -2.5vw;
+            left: 0;
+            margin-left: 5vw;
+            height: 5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .number{
+              font-size: 15px;
+              font-weight: @second-primary-font-weight;
 
-        img {
-          width: 30px;
-          height: 30px;
+            }
+          }
+          img{
+            width: 30px;
+            height: 30px;
+          }
         }
+
       }
 
 
@@ -194,15 +220,42 @@
           }
         }
 
-        .shoppingArea {
-          margin: @second-primary-margin @middle-margin;
+        .collectionContainer{
           display: flex;
+          //justify-content: center;
           align-items: center;
           cursor: pointer;
-          img {
-            width: 30px;
-            height: 30px;
+          margin: @second-primary-margin @middle-margin;
+          position: relative;
+          width: auto;
+          height: auto;
+          .collectionArea{
+            .numberContainer{
+              position: absolute;
+              border-radius: 50%;
+              background-color: white;
+              color: @first-primary-color;
+              width: 1.5vw;
+              top: 0;
+              margin-top: -.5vw;
+              left: 0;
+              margin-left: 2vw;
+              height: 1.5vw;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .number{
+                font-size: 15px;
+                font-weight: @second-primary-font-weight;
+
+              }
+            }
+            img{
+              width: 30px;
+              height: 30px;
+            }
           }
+
         }
 
 

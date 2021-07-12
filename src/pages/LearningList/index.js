@@ -13,7 +13,7 @@ class Index extends Component {
 
     render() {
         const {countryList,totalNumber}=this.props.state;
-        console.log(countryList,totalNumber)
+        // console.log(countryList,totalNumber)
         return (
             <div className={styles.container}>
                 <Heading title="Learning List"/>

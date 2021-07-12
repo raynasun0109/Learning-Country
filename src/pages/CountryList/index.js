@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styles from "./index.less";
-import {getAllCountry} from "../../services/CountryService";
+import {getAllCountry,searchCountryByName,searchCountryByCallingCode,
+    searchCountryByCapital,searchCountryByRegion} from "../../services/CountryService";
 import {connect} from "react-redux";
 import {addCountry} from "../../redux/action";
 import Heading from "../../components/Heading/Heading";
@@ -8,6 +9,7 @@ import Heading from "../../components/Heading/Heading";
 class Index extends Component {
     state={
         countryList:[],
+        totalPage:1
         // productType:["Standard","Other"],
         // chosenProductType:"",
         // subCategory:["Highly Recommended","Most Popular"],
@@ -27,12 +29,38 @@ class Index extends Component {
 
     componentDidMount(){
         this.fetchCountryList()
+
     }
+
+    reset=()=>{
+        this.fetchCountryList()
+    }
+    // getTotal=()=>{
+    //     const {countryList}= this.state;
+    //
+    //     console.log(countryList.length/10)
+    //
+    //     this.setState({totalPage:countryList.length%10===0?countryList.length/10:Math.floor(countryList.length/10)+1},()=>{
+    //         this.renderPag()
+    //     })
+    // }
 
     fetchCountryList=async ()=>{
         const countryListRawData=await getAllCountry();
-        this.setState({countryList:countryListRawData.data})
+        this.setState({countryList:countryListRawData.data},()=>{
+            // this.getTotal();
+        })
     }
+
+    // renderPag=()=>{
+    //    const {totalPage} = this.state;
+    //    const array=[];
+    //    for (let i =1;i<totalPage+1;i++){
+    //        array.push(i)
+    //    }
+    //
+    //    this.setState({})
+    // }
 
     jumpToCountryDetail=(pageDetail)=>{
         this.props.history.push( {pathname:`/country/${pageDetail.name}`})
@@ -46,24 +74,84 @@ class Index extends Component {
         //else, add to the learning list
         if (itemIndex===-1){
             this.props.addCountry(item)
-        } else {
-
-            // return <Toast  msg="操作成功"
-            //                time={2000}/>
-            console.log("exist")
-            // Toast.success('成功‘)
         }
     }
 
+    inputNameChange =async(e)=>{
+        const countryListRawData=await searchCountryByName(e.target.value);
+        this.setState({countryList:countryListRawData.data})
+    }
+    inputRegionChange =async(e)=>{
+        const countryListRawData=await searchCountryByRegion(e.target.value);
+        this.setState({countryList:countryListRawData.data})
+    }
+
+    inputCallingCodeChange=async(e)=>{
+        const inputCallingCode=e.target.value
+        //if user input "+" before the calling code
+        if (inputCallingCode[0]==="+") {
+            const countryListRawData=await searchCountryByCallingCode(inputCallingCode.substring(1));
+            this.setState({countryList:countryListRawData.data})
+        } else {
+            const countryListRawData=await searchCountryByCallingCode(inputCallingCode);
+            this.setState({countryList:countryListRawData.data})
+        }
+
+    }
+
+    inputCapitalCityChange=async(e)=>{
+        const countryListRawData=await searchCountryByCapital(e.target.value);
+        this.setState({countryList:countryListRawData.data})
+    }
+
+
     render() {
-        const {countryList}= this.state;
+        const {countryList,totalPage}= this.state;
+        console.log(countryList,totalPage)
         return (
             <div className={styles.container}>
                 <Heading title="Country List"/>
+                <div className={styles.filterArea}>
+                    <div className={styles.filterCell}>
+                        <div className={styles.filterTitle}>
+                    Country Name:
+                        </div>
+                        <div className={styles.filterContent}>
+                            <input className={styles.inputName} onChange={(e)=>this.inputNameChange(e)} placeholder="Please input the country's name"/>
+                        </div>
+                    </div>
+                    <div className={styles.filterCell}>
+                        <div className={styles.filterTitle}>
+                            Region:
+                        </div>
+                        <div className={styles.filterContent}>
+                            <input className={styles.inputName} onChange={(e)=>this.inputRegionChange(e)} placeholder="Please input the region"/>
+                        </div>
+                    </div>
+                    <div className={styles.filterCell}>
+                        <div className={styles.filterTitle}>
+                            Calling Code:
+                        </div>
+                        <div className={styles.filterContent}>
+                            <input className={styles.inputName} onChange={(e)=>this.inputCallingCodeChange(e)} placeholder="Please input the calling code"/>
+                        </div>
+                    </div>
+                    <div className={styles.filterCell}>
+                        <div className={styles.filterTitle}>
+                            Capital City:
+                        </div>
+                        <div className={styles.filterContent}>
+                            <input className={styles.inputName} onChange={(e)=>this.inputCapitalCityChange(e)} placeholder="Please input the capital city"/>
+                        </div>
+                    </div>
+                   <div className={styles.btnContainer}>
+                    <button onClick={this.reset}>Reset</button>
+                   </div>
+                </div>
                 <div className={styles.countryListContainer}>
                     <div className={styles.countryListContent}>
                         {
-                            countryList.length>0&&countryList&&
+                            countryList&&
                             countryList.map((item,index)=>{
                                 return (
                                     <div key={index} className={styles.countryCard}>
@@ -141,6 +229,9 @@ class Index extends Component {
                             })
                         }
                     </div>
+                </div>
+                <div className={styles.paginationContainer}>
+
                 </div>
             </div>
         );

@@ -1,5 +1,237 @@
 @import "../../global.less";
 
+@media screen and (max-width: 413px) {
+
+  .container {
+    .titleContainer {
+      width: auto;
+      margin: @first-primary-margin 0 @middle-margin 0;
+
+      .title {
+        text-align: center;
+        font-weight: @first-primary-font-weight;
+        color: @first-primary-color;
+        font-size: @large-font-size;
+      }
+
+      .line {
+        margin: @third-primary-margin auto;
+        width: 15vw;
+        height: 3px;
+        background-color: @first-primary-color;
+      }
+    }
+
+    .aboutContent {
+      font-size: @second-middle-primary-font-size;
+      margin: @second-primary-margin 20% @first-primary-margin 20%;
+      line-height: 30px;
+      color: gray;
+    }
+
+    .countryListContainer {
+      margin-bottom: @second-primary-margin;
+
+      .countryListContent {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        .countryCard {
+          border-radius: @card-border-radius;
+         margin: @second-middle-primary-margin auto;
+          width: 90vw;
+          background-blend-mode: soft-light, normal;
+          box-shadow: -7px -7px 16px #FAFBFC, 4px 3px 10px #BDC1D1, inset -1px -1px 10px #F5F6FA, inset 1px 1px 10px #E9EAF2;
+
+          .imgContainer {
+            margin: @middle-margin auto;
+            border: 7px solid @first-primary-color;
+            border-radius: 50%;
+            width: 10vw;
+            height: 10vw;
+            padding: 10px;
+
+            img {
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .contentContainer {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: @middle-margin auto;
+
+            .detailContent {
+              margin-bottom: @second-middle-primary-margin;
+            }
+
+            .detailTitle {
+              font-size: @second-primary-font-size;
+              color: @first-primary-color;
+              margin-bottom: @second-middle-primary-margin;
+              font-weight: @second-primary-font-weight;
+            }
+
+            .detailPageBtn {
+              display: flex;
+              margin: @second-primary-margin 0 0 0;
+
+              button {
+                padding: @third-primary-margin;
+                height: auto;
+                border-radius: @button-border-radius;
+              }
+
+              .detailBtn {
+                border: 2px solid @first-primary-color;
+                color: @first-primary-color;
+                background-color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .countryMore {
+      display: flex;
+      justify-content: center;
+
+      button {
+        padding: @third-primary-margin;
+        margin: @second-primary-margin @second-primary-margin 0 0;
+        height: auto;
+        border-radius: @button-border-radius;
+        font-size: @second-middle-primary-font-size;
+        border: none;
+        color: white;
+        background-color: @first-primary-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:414px)and (max-width: 1023px) {
+
+  .container {
+    .titleContainer {
+      width: auto;
+      margin: @first-primary-margin 0 @middle-margin 0;
+
+      .title {
+        text-align: center;
+        font-weight: @first-primary-font-weight;
+        color: @first-primary-color;
+        font-size: @large-font-size;
+      }
+
+      .line {
+        margin: @third-primary-margin auto;
+        width: 15vw;
+        height: 3px;
+        background-color: @first-primary-color;
+      }
+    }
+
+    .aboutContent {
+      font-size: @second-primary-font-size;
+      margin: @second-primary-margin 20% @first-primary-margin 20%;
+      line-height: 30px;
+      color: gray;
+    }
+
+    .countryListContainer {
+      margin-bottom: @second-primary-margin;
+
+      .countryListContent {
+        justify-content: center;
+        display: flex;
+        .countryCard {
+          border-radius: @card-border-radius;
+          margin: 0 @second-primary-margin;
+          width: 20vw;
+          background-blend-mode: soft-light, normal;
+          box-shadow: -7px -7px 16px #FAFBFC, 4px 3px 10px #BDC1D1, inset -1px -1px 10px #F5F6FA, inset 1px 1px 10px #E9EAF2;
+
+          .imgContainer {
+            margin: @middle-margin auto;
+            border: 7px solid @first-primary-color;
+            border-radius: 50%;
+            width: 10vw;
+            height: 10vw;
+            padding: 10px;
+
+            img {
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+
+          .contentContainer {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: @middle-margin auto;
+
+            .detailContent {
+              margin-bottom: @second-middle-primary-margin;
+            }
+
+            .detailTitle {
+              font-size: @second-primary-font-size;
+              color: @first-primary-color;
+              margin-bottom: @second-middle-primary-margin;
+              font-weight: @second-primary-font-weight;
+            }
+
+            .detailPageBtn {
+              display: flex;
+              margin: @second-primary-margin 0 0 0;
+
+              button {
+                padding: @third-primary-margin;
+                height: auto;
+                border-radius: @button-border-radius;
+              }
+
+              .detailBtn {
+                border: 2px solid @first-primary-color;
+                color: @first-primary-color;
+                background-color: white;
+              }
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+
+    .countryMore {
+      display: flex;
+      justify-content: center;
+
+      button {
+        padding: @third-primary-margin;
+        margin: @second-primary-margin @second-primary-margin 0 0;
+        height: auto;
+        border-radius: @button-border-radius;
+        font-size: @second-primary-font-size;
+        border: none;
+        color: white;
+        background-color: @first-primary-color;
+      }
+    }
+  }
+
+}
 @media screen and (min-width: 1024px) {
 
   .container{
@@ -26,17 +258,13 @@
       color: gray;
     }
     .countryListContainer{
-      //margin-top: @first-primary-margin;
       margin-bottom: @second-primary-margin;
       .countryListContent{
         justify-content:center;
         display: flex;
-        //flex-direction: column;
         .countryCard{
           border-radius: @card-border-radius;
           margin: 0 @second-primary-margin;
-          //justify-content: space-between;
-          //display: flex;
           width: 20vw;
           background-blend-mode: soft-light, normal;
           box-shadow: -7px -7px 16px #FAFBFC, 4px 3px 10px #BDC1D1, inset -1px -1px 10px #F5F6FA, inset 1px 1px 10px #E9EAF2;
@@ -44,9 +272,6 @@
               margin:@middle-margin auto;
               border: 7px solid @first-primary-color;
               border-radius: 50%;
-
-              //width: 100%;
-              //height: auto;
               width: 10vw;
               height: 10vw;
               padding: 10px;

@@ -85,7 +85,6 @@ class Header extends Component {
                             <div className={styles.collapseBtn} onClick={this.openSideMenu}>
                                 <img src={CollapseIcon} alt="img"/>
                             </div>
-                            {/*{console.log("isOpenSideMenu",isOpenSideMenu)}*/}
                             <div className={`${isOpenSideMenu?styles.sideBarArea : styles.closeSideBarArea} ${styles.sideBarContainer}`}>
                                 <div className={styles.menuArea}>
                                     {
@@ -99,11 +98,18 @@ class Header extends Component {
                                         })
                                     }
                                 </div>
-                                <div className={styles.shoppingArea}>
+                                <div className={styles.collectionContainer}>
 
-                                    {/*<Badge count={total}>*/}
-                                        <img src={collectionIcon} onClick={this.toLearningList} alt="img"/>
-                                    {/*</Badge>*/}
+                                    <div className={styles.collectionArea}>
+                                        {totalNumber!==0&&
+                                        <div className={styles.numberContainer}>
+                                            <div className={styles.number}>
+                                                {totalNumber}
+                                            </div>
+
+                                        </div>}
+                                        <img alt="img" src={collectionIcon} onClick={this.toLearningList}/>
+                                    </div>
                                 </div>
                             </div>
 

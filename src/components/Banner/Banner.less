@@ -11,14 +11,15 @@
 
     .bannerText {
       z-index: 2;
-      top: calc(120px);
+      //top: calc(6vw);
       margin: 0 auto;
       left: 50%;
-      transform: translateX(-50%);
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
       position: absolute;
       font-size: @large-middle-font-size;
       font-weight: @first-primary-font-weight;
-      color: #004c92;
+      color: @second-primary-color;
       text-align: center;
     }
   }
@@ -43,7 +44,7 @@
       position: absolute;
       font-size: @large-middle-font-size;
       font-weight: @first-primary-font-weight;
-      color: #004c92;
+      color: white;
       text-align: center;
     }
   }

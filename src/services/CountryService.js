@@ -30,9 +30,9 @@ export function getAllCountry() {
  */
 export function getOneCountry(countryName) {
     return new Promise((resolve,reject)=>{
-        axios.get(`${setting.baseUrl}${setting.getAllApi}`)
+        axios.get(`${setting.baseUrl}${setting.getOneCountry}/${countryName}`)
             .then(function (response) {
-                resolve(FilterOneCountryDetail(countryName,response.data))
+                resolve(response.data[0])
             })
             .catch(function (error) {
                 reject(error)
@@ -41,4 +41,72 @@ export function getOneCountry(countryName) {
 
 }
 
+/**
+ * @Author Mingyang Sun
+ * @Date 12/07/2021
+ * @Description: Search country by name
+ * @Contact: sunmi@tcd.ie
+ */
+export function searchCountryByName(countryName) {
+    return new Promise((resolve,reject)=>{
+        axios.get(`${setting.baseUrl}${setting.searchCountryByNameApi}/${countryName}`)
+            .then(function (response) {
+                resolve(response)
+            })
+            .catch(function (error) {
+                reject(error)
+            })
+    })
+}
 
+/**
+ * @Author Mingyang Sun
+ * @Date 12/07/2021
+ * @Description: Search country by region
+ * @Contact: sunmi@tcd.ie
+ */
+export function searchCountryByRegion(region) {
+    return new Promise((resolve,reject)=>{
+        axios.get(`${setting.baseUrl}${setting.searchCountryByRegionApi}/${region}`)
+            .then(function (response) {
+                resolve(response)
+            })
+            .catch(function (error) {
+                reject(error)
+            })
+    })
+}
+/**
+ * @Author Mingyang Sun
+ * @Date 12/07/2021
+ * @Description: Search country by capital
+ * @Contact: sunmi@tcd.ie
+ */
+export function searchCountryByCapital(capital) {
+    return new Promise((resolve,reject)=>{
+        axios.get(`${setting.baseUrl}${setting.searchCountryByCapitalCityApi}/${capital}`)
+            .then(function (response) {
+                resolve(response)
+            })
+            .catch(function (error) {
+                reject(error)
+            })
+    })
+}
+/**
+ * @Author Mingyang Sun
+ * @Date 12/07/2021
+ * @Description: Search country by callingcode
+ * @Contact: sunmi@tcd.ie
+ */
+export function searchCountryByCallingCode(callingcode) {
+    return new Promise((resolve,reject)=>{
+        axios.get(`${setting.baseUrl}${setting.searchCountryByCallingCodeApi}/${callingcode}`)
+            .then(function (response) {
+                resolve(response)
+            })
+            .catch(function (error) {
+                reject(error)
+            })
+    })
+}
