@@ -1,8 +1,11 @@
 # This is the project for Distilled Coding Test
 
+## Live Link
+To view the live website, please check this link below: \
+https://60ecbcedba2ce723cc1f7822--flamboyant-mcnulty-79bc2d.netlify.app/
+
 
 ## Author Information
-
 Author: Mingyang Sun \
 Contact: sunmi@tcd.ie \
 All Copyright reserves \
